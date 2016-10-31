@@ -28,19 +28,12 @@ h6 {
   -webkit-font-smoothing: antialiased;
 }
 
-h1 { font-size: $font-size-base * 4.25; }
-h2 { font-size: $font-size-base * 3.25; }
-h3 { font-size: $font-size-base * 2.75; }
-h4 { font-size: $font-size-base * 1.85; }
-h5 { font-size: $font-size-base * 1.45; }
-h6 { font-size: $font-size-base;        }
-
-.heading--h1 { @include s-alpha;   }
-.heading--h2 { @include s-bravo;   }
-.heading--h3 { @include s-charlie  }
-.heading--h4 { @include s-delta;   }
-.heading--h5 { @include s-echo;    }
-.heading--h6 { @include s-foxtrot; }
+h1 { @include s-alpha;   }
+h2 { @include s-bravo;   }
+h3 { @include s-charlie  }
+h4 { @include s-delta;   }
+h5 { @include s-echo;    }
+h6 { @include s-foxtrot; }
 
 p {
   @include font-type($primary-sans-serif, normal, 400);
