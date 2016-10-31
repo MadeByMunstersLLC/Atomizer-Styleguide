@@ -2,14 +2,75 @@
 // ========================================
 
 // Variables
-$guide-page-header-bg:              $black-base;
-$guide-page-header-height:          700px;
-$guide-page-header-padding:         $spacer-charlie;
+$guide-page-header-bg:                $black-base;
+$guide-page-header-height:            600px;
+$guide-page-header-padding:           $spacer-charlie;
+
+$guide-page-header-title-color:       $white-base;
+$guide-page-header-title-margin:      $spacer-alpha * 2;
+$guide-page-header-title-size:        80px;
+
+$guide-page-article-margin:           $spacer-alpha;
+
+$guide-page-article-label-color:      $purple-base;
+$guide-page-article-label-transform:  uppercase;
+
+$guide-page-article-link-color:       $grey-dark;
+$guide-page-article-link-display:     block;
+$guide-page-article-link-margin:      $spacer-delta;
 
 
-// Structure
+// Page Header
 .guide__page-header {
   background-color: $guide-page-header-bg;
   height: $guide-page-header-height;
   padding: $guide-page-header-padding;
+
+  .title {
+    color: $guide-page-header-title-color;
+    font-size: $guide-page-header-title-size;
+    margin-top: $guide-page-header-title-margin;
+  }
+}
+
+// Page Article
+.guide__page-article {
+  @include outer-container;
+  margin-top: $guide-page-article-margin;
+}
+
+// Page Content
+.page-article__content {
+  @include span-columns(8 of 12);
+
+  .content__title {
+    font-size: 45px;
+  }
+
+  .content__text {
+    font-size: 19px;
+    color: #44484a;
+    line-height: 30px;
+  }
+}
+
+// Page Navigation
+.page-article__aside {
+  @include span-columns(3 of 12);
+  @include shift(1 of 12);
+}
+
+.page-article__nav {
+
+  .label {
+    @include s-golf;
+    color: $guide-page-article-label-color;
+    text-transform: $guide-page-article-label-transform;
+  }
+
+  .link {
+    display: $guide-page-article-link-display;
+    color: $guide-page-article-link-color;
+    margin-bottom: $guide-page-article-link-margin;
+  }
 }

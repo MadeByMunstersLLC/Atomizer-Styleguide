@@ -52,7 +52,6 @@ dd{
 
 a {
   @include font-type(inherit, normal, 400);
-  color: $blue-base;
   text-decoration: none;
 
   &:active,
@@ -60,15 +59,6 @@ a {
     outline: none;
   }
 }
-
-.text--light {
-  @include font-type($primary-sans-serif, normal, 100);
-}
-
-.text--uppercase {
-  text-transform: capitalize;
-}
-
 
 
 // Text Alignment

@@ -1,3 +1,23 @@
 ---
 title: Design Elements | Red Ventures Atomizer.
+header_title: Design Elements
 ---
+<!-- Page Variables -->
+<% sidenav = data.navigation.site_navigation.select {|item| request.path.split('/')[0] == item.section_url} %>
+
+<!-- Page Content -->
+<article class="guide__page-article">
+  <!-- Page Sections -->
+  <div class="page-article__content">
+    <h2 class="content__title">Colors</h2>
+
+    <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <!-- Page Sidebar -->
+  <%= partial 'layouts/shared/_guide-page-nav', locals: {sidenav: sidenav} %>
+</article>

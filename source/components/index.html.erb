@@ -1,3 +1,10 @@
 ---
 title: Design Components | Red Ventures Atomizer.
+header_title: Design Components
 ---
+
+<!-- Page Variables -->
+<% sidenav = data.navigation.site_navigation.select {|item| request.path.split('/')[0] == item.section_url} %>
+
+<!-- Page Navigation -->
+<%= partial 'layouts/shared/_guide-page-nav', locals: {sidenav: sidenav} %>

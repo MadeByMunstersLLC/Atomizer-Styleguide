@@ -26,7 +26,7 @@ $guide-navigation-i-span-width:             100%;
 $guide-navigation-overlay-bg:               $black-base;
 $guide-navigation-overlay-height:           100%;
 $guide-navigation-overlay-opacity:          0;
-$guide-navigation-overlay-opacity-active:   0.95;
+$guide-navigation-overlay-opacity-active:   1;
 $guide-navigation-overlay-position:         fixed;
 $guide-navigation-overlay-width:            100%;
 $guide-navigation-overlay-z-index:          -1;
@@ -110,10 +110,11 @@ $guide-navigation-overlay-z-index-active:   1;
 // Guide Navigation Modal
 .guide__navigation__modal {
   @include position($guide-navigation-overlay-position);
-  @include transition(opacity 0.5s ease-in-out);
+  @include transition(opacity 0.35s ease-in-out);
   background-color: $guide-navigation-overlay-bg;
   height: $guide-navigation-overlay-height;
   opacity: $guide-navigation-overlay-opacity;
+  overflow-y: scroll;
   width: $guide-navigation-overlay-width;
   z-index: $guide-navigation-overlay-z-index;
 
@@ -153,7 +154,7 @@ $guide-navigation-overlay-z-index-active:   1;
 }
 
 .guide__navigation__modal-link {
-  @include transition(color 0.5s ease-in-out);
+  @include transition(color 0.3s ease-in-out);
   @include s-bravo;
   font-weight: 600;
 
