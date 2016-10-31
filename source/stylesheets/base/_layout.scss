@@ -1,19 +1,12 @@
 // Base Layout Stylesheets
 // ========================================
 
-// Variables
-$site-background:        $black-base;
-$site-max-width:         1440px;
-
-
 // Global Styles
 html,
 body {
   @include position(relative);
-  background-color: $site-background;
   margin: 0 auto;
-  max-width: $site-max-width;
-  overflow: hidden;
+  overflow-x: hidden;
 
   &.is-fixed {
     @include position(absolute);
@@ -32,16 +25,16 @@ body {
   $zero:      nth($reset, 2);
 
   .reset-margin-#{$position} {
-    margin-#{$position}: $zero !important;
+    margin-#{$position}: $zero;
   }
 
   .reset-padding-#{$position} {
-    padding-#{$position}: $zero !important;
+    padding-#{$position}: $zero;
   }
 };
 
-.reset-padding { padding: 0 !important; }
-.reset-margin  { margin:  0 !important; }
+.reset-padding { padding: 0; }
+.reset-margin  { margin:  0; }
 
 
 // Floats

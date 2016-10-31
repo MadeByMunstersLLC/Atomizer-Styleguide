@@ -1,0 +1,15 @@
+// Style Guide Page Styles
+// ========================================
+
+// Variables
+$guide-page-header-bg:              $black-base;
+$guide-page-header-height:          700px;
+$guide-page-header-padding:         $spacer-charlie;
+
+
+// Structure
+.guide__page-header {
+  background-color: $guide-page-header-bg;
+  height: $guide-page-header-height;
+  padding: $guide-page-header-padding;
+}

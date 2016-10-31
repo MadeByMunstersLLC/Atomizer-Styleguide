@@ -1,0 +1,30 @@
+site_navigation:
+  - section_title: Design Components
+    section_url: components
+    sections:
+      - section_title: Alerts
+        section_link: 'components/#alerts'
+      - section_title: Buttons
+        section_link: 'components/#buttons'
+      - section_title: Form Elements
+        section_link: 'components/#form-elements'
+      - section_title: Links
+        section_link: 'components/#links'
+      - section_title: Modals
+        section_link: 'components/#modals'
+      - section_title: Tabs
+        section_link: 'components/#tabs'
+  - section_title: Design Elements
+    section_url: elements
+    sections:
+      - section_title: Colors
+        section_link: 'elements/#colors'
+      - section_title: Icons
+        section_link: 'elements/#icons'
+      - section_title: Typography
+        section_link: 'elements/#typography'
+  - section_title: Design Modules
+    section_url: modules
+    sections:
+      - section_title: Navigation
+        section_link: 'modules/#navigation'
