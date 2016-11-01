@@ -4,13 +4,18 @@
 // Variables
 $guide-page-header-bg:                $black-base;
 $guide-page-header-height:            600px;
-$guide-page-header-padding:           $spacer-charlie;
+$guide-page-header-position:          relative;
 
-$guide-page-header-title-color:       $white-base;
-$guide-page-header-title-margin:      $spacer-alpha * 2;
-$guide-page-header-title-size:        80px;
+$guide-page-header-title-color:       $black-base;
+$guide-page-header-title-size:        150px;
+$guide-page-header-title-spacing:     -5px;
+$guide-page-header-title-weight:      900;
+$guide-page-header-title-transform:   uppercase;
 
 $guide-page-article-margin:           $spacer-alpha;
+
+$guide-page-article-content-border:   1px solid $grey-light;
+$guide-page-article-content-padding:  120px 0;
 
 $guide-page-article-label-color:      $purple-base;
 $guide-page-article-label-transform:  uppercase;
@@ -22,14 +27,27 @@ $guide-page-article-link-margin:      $spacer-delta;
 
 // Page Header
 .guide__page-header {
+  @include position($guide-page-header-position);
   background-color: $guide-page-header-bg;
-  height: $guide-page-header-height;
-  padding: $guide-page-header-padding;
+  height: $guide-page-header-height - 300px;
+  z-index: -1;
+
+  @include media($medium) {
+    height: $guide-page-header-height;
+  }
 
   .title {
+    @include center(true, true);
+    @include text-shadow(0px 0px 30px, rgba(27,32,40,0.50));
+    font-size: $guide-page-header-title-size / 3.5;
     color: $guide-page-header-title-color;
-    font-size: $guide-page-header-title-size;
-    margin-top: $guide-page-header-title-margin;
+    font-weight: $guide-page-header-title-weight;
+    text-transform: $guide-page-header-title-transform;
+
+    @include media($medium) {
+      font-size: $guide-page-header-title-size;
+      letter-spacing: $guide-page-header-title-spacing;
+    }
   }
 }
 
@@ -37,27 +55,93 @@ $guide-page-article-link-margin:      $spacer-delta;
 .guide__page-article {
   @include outer-container;
   margin-top: $guide-page-article-margin;
+  padding: 0 $spacer-charlie;
+
+  @include media($large) {
+    padding: 0;
+  }
 }
 
 // Page Content
 .page-article__content {
-  @include span-columns(8 of 12);
+  @include span-columns(4 of 4);
 
-  .content__title {
-    font-size: 45px;
+  @include media($medium) {
+    @include span-columns(8 of 12);
+    margin-right: 15%;
+  }
+}
+
+.page-article__content-section {
+  border-bottom: $guide-page-article-content-border;
+  padding: $guide-page-article-content-padding;
+
+  &:last-child {
+    border-bottom: none;
   }
 
-  .content__text {
-    font-size: 19px;
-    color: #44484a;
-    line-height: 30px;
+  &:first-child {
+    padding-top: 0;
   }
+
+  .content-section__row {
+    @extend .row;
+    display: block;
+    margin: $spacer-alpha 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .content-section__header {
+    @include span-columns(4 of 4);
+
+    @include media($medium) {
+      @include clearfix;
+      @include span-columns(7 of 8);
+    }
+
+    .title {
+      border-left: 5px solid $blue-base;
+      font-size: 45px;
+      font-weight: 700;
+      margin-bottom: $spacer-delta;
+      padding-left: $spacer-delta;
+      text-transform: uppercase;
+    }
+
+    .text--large {
+      @include s-charlie;
+      color: $grey-dark;
+      line-height: 26px;
+    }
+  }
+
+  .content-section__label {
+    @include font-type($primary-sans-serif, normal, 700);
+    @include s-golf;
+    margin-bottom: $spacer-echo;
+    text-transform: uppercase;
+  }
+
 }
 
 // Page Navigation
 .page-article__aside {
-  @include span-columns(3 of 12);
-  @include shift(1 of 12);
+  display: none;
+
+  &.is-fixed {
+    margin-top: $spacer-charlie;
+  }
+
+  @include media($medium) {
+    @include span-columns(2 of 12);
+  }
 }
 
 .page-article__nav {

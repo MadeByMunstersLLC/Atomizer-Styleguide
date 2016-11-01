@@ -1,0 +1,42 @@
+// Style Guide Elements View Styles
+// ========================================
+
+// Color Swatch
+.color-swatch {
+  @include omega(2n);
+  margin-bottom: $spacer-charlie;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media($medium) {
+    @include omega-reset(2n);
+    @include omega(3n);
+  }
+
+  @include media($large) {
+    @include omega-reset(3n);
+    @include omega(4n);
+  }
+
+  .color-swatch__icon {
+    display: block;
+    height: 100px;
+    margin-bottom: $spacer-delta;
+    width: 100%;
+  }
+
+  .title {
+    margin-bottom: $spacer-echo;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    @include s-golf;
+    color: $grey-dark;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

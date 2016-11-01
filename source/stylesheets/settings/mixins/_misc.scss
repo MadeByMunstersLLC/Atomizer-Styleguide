@@ -20,9 +20,18 @@
 }
 
 
-// Vertical Center
-@mixin vertical-center {
-  @include transform(translateY(-50%));
+// Vertical + Horizontal Align
+@mixin center($horizontal: true, $vertical: true) {
   position: absolute;
-  top: 50%;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
 }

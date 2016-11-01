@@ -1,8 +1,8 @@
 <header class="guide__navigation">
   <nav role="navigation">
     <div class="guide__navigation--left">
-      <% link_to '/' do %>
-        <%= image_tag 'logos/logo.svg', alt: 'Atomizer Logo', class: 'guide-navigation__logo' %>
+      <% link_to '/', class: 'guide-navigation__logo' do %>
+        <%= inline_svg('logos/logo.svg') %>
       <% end %>
     </div>
     <div class="guide__navigation--right">
@@ -33,6 +33,6 @@
         </li>
       <% end %>
     </ul>
-    <h2 class="guide__navigation__modal-title">Navigation</h2>
+    <h2 class="guide__navigation__modal-title">MENU</h2>
   </div>
 </div>

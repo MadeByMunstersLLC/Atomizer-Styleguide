@@ -24,5 +24,10 @@
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <%= javascript_include_tag  "application" %>
+    <script>
+      $(".page-article__aside").stick_in_parent({
+        sticky_class: 'is-fixed'
+      });
+    </script>
   </body>
 </html>

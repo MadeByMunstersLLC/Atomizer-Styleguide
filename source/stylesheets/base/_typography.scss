@@ -20,7 +20,6 @@ h3,
 h4,
 h5,
 h6 {
-  @include font-type($primary-sans-serif, normal, 700);
   color: $black-base;
   line-height: 1.0;
   margin-bottom: $spacer-delta;
@@ -41,6 +40,10 @@ p {
   color: $black-base;
   line-height: $base-line-height;
   margin-bottom: 10px;
+}
+
+p.text--small {
+  @include s-golf;
 }
 
 li,
@@ -80,3 +83,7 @@ a {
     color: $tone-color;
   };
 }
+
+// Text Weight
+.text--bold    { font-weight: 700; }
+.text--regular { font-weight: 400; }

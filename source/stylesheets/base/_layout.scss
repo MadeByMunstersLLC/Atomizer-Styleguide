@@ -32,11 +32,11 @@ body {
 
 // Floats
 .float--left {
-  @include media($tablet) { float: left; }
+  @include media($medium) { float: left; }
 }
 
 .float--right {
-  @include media($tablet) { float: right; }
+  @include media($medium) { float: right; }
 }
 
 

@@ -1,11 +1,11 @@
 <aside role="sidebar" class="page-article__aside">
   <nav role="navigation" class="page-article__nav">
-    <h5 class="label">Navigation</h5>
+    <h5 class="label text--bold">Navigation</h5>
     <ul class="list">
       <% sidenav.each do |item| %>
         <li class="item">
         <% item.sections.each do |section| %>
-          <%= link_to section.section_title, request.path.split('/')[0] == 'components' || 'elements' || 'modules' ? "#{config[:root_url] ? config[:root_url] : '/'}#{section.section_link}" : section.section_link, class: 'link' %>
+          <%= link_to section.section_title, section.section_page_link, class: 'link scroll-on-page-link' %>
         <% end %>
         </li>
       <% end %>
