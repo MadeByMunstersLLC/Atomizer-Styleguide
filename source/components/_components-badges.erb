@@ -2,8 +2,39 @@
   <div class="content-section__row">
     <div class="content-section__header">
       <h2 class="title">Badges</h2>
-      <p class="text--large">Oh no! Did you break something?</p>
-      <p class="text">We highly doubt it, but this would be a good time to let the user know something went wrong. Alerts, should be used when the user needs instant feedback on an action they preformed. They are helpful when a user deletes a module or when they have successfully saved or created something new. Below you will find three types of alerts and how to best use them in the interface.</p>
+      <p class="text--large">Hey you! Yeah you. Look over here.</p>
+      <p class="text">Now that we have your attention, let's talk about badges and when to use them. Badges should be used to label new features, items that might be broken, or notify a user about the number of items they have selected. The should call just enough attention so a user notices them, but do not need to be the dominate element on the page or item.</p>
     </div>
+  </div>
+  <div class="content-section__row">
+    <ul>
+      <li class="badge--alpha">10</li>
+      <li class="badge--bravo">New</li>
+      <li class="badge--charlie">Danger</li>
+    </ul>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <span class="badge--alpha">10</span>
+  <span class="badge--bravo">New</span>
+  <span class="badge--charlie">Danger</span>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create badges.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.badge--[type]</td>
+          <td class="table__body-item">This should be applied to the element you are styling to look like a badge. The class name should change based on the type of badge being used. <% code("html") do %><span class"badge--alpha"></span><% end %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

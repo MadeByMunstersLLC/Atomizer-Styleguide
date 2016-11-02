@@ -75,7 +75,7 @@ $guide-page-article-link-color-active:  $blue-base;
 }
 
 .page-article__content-section {
-  border-bottom: $guide-page-article-content-border;
+  // border-bottom: $guide-page-article-content-border;
   padding: $guide-page-article-content-padding;
 
   &:last-child {
@@ -161,6 +161,21 @@ $guide-page-article-link-color-active:  $blue-base;
 
     &.is-active {
       color: $guide-page-article-link-color-active;
+    }
+  }
+}
+
+
+// Basic List
+.guide__list {
+  @extend .row;
+
+  .guide__item {
+    @include span-columns(4 of 4);
+
+    @include media($medium) {
+      @include omega(4n);
+      @include span-columns(2 of 8);
     }
   }
 }

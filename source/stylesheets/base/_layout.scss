@@ -17,17 +17,17 @@ body {
   $position:  nth($reset, 1);
   $zero:      nth($reset, 2);
 
-  .reset-margin-#{$position} {
+  .margin-reset--#{$position} {
     margin-#{$position}: $zero;
   }
 
-  .reset-padding-#{$position} {
+  .padding-reset--#{$position} {
     padding-#{$position}: $zero;
   }
 };
 
-.reset-padding { padding: 0; }
-.reset-margin  { margin:  0; }
+.margin--reset   { margin:  0; }
+.padding--reeset { padding: 0; }
 
 
 // Floats

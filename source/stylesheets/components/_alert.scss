@@ -4,7 +4,10 @@
 // Variables
 $alet-border:              1px solid;
 $alet-display:             inline;
+$alert-opacity:            1;
+$alert-opacity-hidden:     0;
 $alet-padding:             $spacer-delta $spacer-charlie;
+$alert-position:           relative;
 $alert-radius:             1px;
 $alert-spread:             0 0 15px;
 $alert-shadow:             rgba(35,35,35,0.20);
@@ -19,8 +22,11 @@ $alert-close-transition:   0.5s opacity ease;
 // Structure
 %alert {
   @include box-shadow($alert-spread, $alert-shadow);
+  @include position($alert-position);
+  @include transition(opacity 0.5s ease);
   border: $alet-border;
   border-radius: $alert-radius;
+  opacity: $alert-opacity;
   padding: $alet-padding;
 }
 
@@ -39,6 +45,13 @@ $alert-close-transition:   0.5s opacity ease;
 
     #app-icon {
       fill: $border-color;
+    }
+
+
+    // Hide Alert
+      // NOTE: This class should be more descriptive. Possibly is-hidden if close icon is clicked to hide the alert.
+    &.is-active {
+      opacity: $alert-opacity-hidden;
     }
   }
 }

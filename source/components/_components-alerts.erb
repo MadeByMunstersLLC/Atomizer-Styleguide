@@ -8,11 +8,11 @@
   </div>
   <div class="content-section__row">
     <% data.components_alerts.alerts.each do |a| %>
-      <figure aria-hidden="true" class="alert--<%= a.type %>">
+      <figure aria-hidden="true" class="alert--<%= a.type %> toggle-parent">
         <%= inline_svg("icons/notification-icon.svg", class: "alert__icon") %>
         <h5 class="alert__text"><%= a.text %></h5>
         <% link_to '#', class: 'alert__trigger' do %>
-          <%= inline_svg("icons/close-icon.svg", class: "alert__icon alert__icon--close") %>
+          <%= inline_svg("icons/close-icon.svg", class: "alert__icon alert__icon--close toggle-element") %>
         <% end %>
       </figure><br/>
     <% end %>
