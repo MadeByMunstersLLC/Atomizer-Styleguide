@@ -1,0 +1,66 @@
+// Alert Component Style
+// ========================================
+
+// Variables
+$alet-border:              1px solid;
+$alet-display:             inline;
+$alet-padding:             $spacer-delta $spacer-charlie;
+$alert-radius:             1px;
+$alert-spread:             0 0 15px;
+$alert-shadow:             rgba(35,35,35,0.20);
+$alert-v-align:            middle;
+
+$alert-close-float:        right;
+$alert-close-margin:       3px;
+$alert-close-size:         15px;
+$alert-close-transition:   0.5s opacity ease;
+
+
+// Structure
+%alert {
+  @include box-shadow($alert-spread, $alert-shadow);
+  border: $alet-border;
+  border-radius: $alert-radius;
+  padding: $alet-padding;
+}
+
+
+@each $alert, $styles in $alerts {
+  $border-color:  nth($styles, 1);
+  $bg-color:      nth($styles, 2);
+  $color:         nth($styles, 3);
+
+  .alert--#{$alert} {
+    @extend %alert;
+    background: $bg-color;
+    border-color: $border-color;
+    color: $color;
+
+
+    #app-icon {
+      fill: $border-color;
+    }
+  }
+}
+
+.alert__icon,
+.alert__text {
+  display: $alet-display;
+  vertical-align: $alert-v-align;
+}
+
+.alert__text {
+  margin-left: $spacer-echo;
+}
+
+.alert__icon--close {
+  @include transition($alert-close-transition);
+  float: $alert-close-float;
+  height: $alert-close-size;
+  margin-top: $alert-close-margin;
+  width: $alert-close-size;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

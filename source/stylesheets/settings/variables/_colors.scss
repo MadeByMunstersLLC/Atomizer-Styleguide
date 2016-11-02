@@ -9,6 +9,7 @@
   $blue-base:     #2791C6;
 
   // Green
+  $green-light:   #D0EDE5;
   $green-base:    #42B996;
 
   // Grey
@@ -20,6 +21,7 @@
   $purple-base:   #434358;
 
   // Red
+  $red-light:     #F9D7D3;
   $red-base:      #E6614F;
 
   // White
@@ -27,6 +29,7 @@
   $white-dark:    #FAFAFA;
 
   // Yellow
+  $yellow-light:  #FDF0D3;
   $yellow-base:   #FBCF6E;
 
 
@@ -36,12 +39,15 @@
     black-dark:   $black-dark,
     blue-base:    $blue-base,
     green-base:   $green-base,
+    green-light:  $green-light,
     grey-light:   $grey-light,
     grey-base:    $grey-base,
     grey-dark:    $grey-dark,
     purple-base:  $purple-base,
+    red-light:    $red-light,
     red-base:     $red-base,
     white-base:   $white-base,
     white-dark:   $white-dark,
+    yellow-light: $yellow-light,
     yellow-base:  $yellow-base
   );

@@ -147,6 +147,14 @@ $guide-navigation-overlay-z-index-active:   1;
   margin: ($spacer-alpha * 2) 0 0 $spacer-charlie;
 }
 
+.guide__navigation__modal-item {
+  @include span-columns(4 of 4);
+
+  @include media($large) {
+    @include span-columns(3 of 12);
+  }
+}
+
 .guide__navigation__modal-title,
 .guide__navigation__modal-label,
 .guide__navigation__modal-link {
@@ -154,8 +162,9 @@ $guide-navigation-overlay-z-index-active:   1;
 }
 
 .guide__navigation__modal-title {
+  @include position(absolute, null null 0 null);
   font-size: 200px;
-  font-weight: 900px;
+  font-weight: 900;
   line-height: normal;
   margin-bottom: $spacer-charlie;
   opacity: 0.07;

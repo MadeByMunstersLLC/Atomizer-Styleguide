@@ -5,7 +5,7 @@
       <% sidenav.each do |item| %>
         <li class="item">
         <% item.sections.each do |section| %>
-          <%= link_to section.section_title, section.section_page_link, class: 'link scroll-on-page-link' %>
+          <%= link_to section.section_title, section.section_page_link, class: 'link' %>
         <% end %>
         </li>
       <% end %>

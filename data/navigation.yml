@@ -1,25 +1,4 @@
 site_navigation:
-  - section_title: Design Components
-    section_url: components
-    sections:
-      - section_title: Alerts
-        section_link: 'components/#alerts'
-        section_page_link: '#alerts'
-      - section_title: Buttons
-        section_link: 'components/#buttons'
-        section_page_link: '#buttons'
-      - section_title: Form Elements
-        section_link: 'components/#form-elements'
-        section_page_link: '#form-elements'
-      - section_title: Links
-        section_link: 'components/#links'
-        section_page_link: '#links'
-      - section_title: Modals
-        section_link: 'components/#modals'
-        section_page_link: '#modals'
-      - section_title: Tabs
-        section_link: 'components/#tabs'
-        section_page_link: '#tabs'
   - section_title: Design Elements
     section_url: elements
     sections:
@@ -32,9 +11,60 @@ site_navigation:
       - section_title: Iconography
         section_link: 'elements/#icons'
         section_page_link: '#icons'
+  - section_title: Design Components
+    section_url: components
+    sections:
+      - section_title: Alerts
+        section_link: 'components/#alerts'
+        section_page_link: '#alerts'
+      - section_title: Badges
+        section_link: 'components/#badges'
+        section_page_link: '#badges'
+      - section_title: Buttons
+        section_link: 'components/#buttons'
+        section_page_link: '#buttons'
+      - section_title: Cards
+        section_link: 'components/#cards'
+        section_page_link: '#cards'
+      - section_title: Form Elements
+        section_link: 'components/#form-elements'
+        section_page_link: '#form-elements'
+      - section_title: Highlight
+        section_link: 'components/#highlight'
+        section_page_link: '#highlight'
+      - section_title: Links
+        section_link: 'components/#links'
+        section_page_link: '#links'
+      - section_title: Modals
+        section_link: 'components/#modals'
+        section_page_link: '#modals'
+      - section_title: Popout
+        section_link: 'components/#popout'
+        section_page_link: '#popout'
+      - section_title: Tables
+        section_link: 'components/#tables'
+        section_page_link: '#tables'
+      - section_title: Tabs
+        section_link: 'components/#tabs'
+        section_page_link: '#tabs'
+      - section_title: Tooltips
+        section_link: 'components/#tooltips'
+        section_page_link: '#tooltips'
   - section_title: Design Modules
     section_url: modules
     sections:
       - section_title: Navigation
         section_link: 'modules/#navigation'
         section_page_link: '#navigation'
+      - section_title: Page Header
+        section_link: 'modules/#page-header'
+        section_page_link: '#page-header'
+      - section_title: Page Header Tabs
+        section_link: 'modules/#page-header-tabs'
+        section_page_link: '#page-header-tabs'
+  - section_title: Design Concepts
+    section_url: concepts
+    sections:
+      - section_title: Sass Structure
+        section_link: 'concepts/#sass'
+        section_page_link: '#sass'

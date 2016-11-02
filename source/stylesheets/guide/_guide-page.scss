@@ -2,27 +2,29 @@
 // ========================================
 
 // Variables
-$guide-page-header-bg:                $black-base;
-$guide-page-header-height:            600px;
-$guide-page-header-position:          relative;
+$guide-page-header-bg:                  $black-base;
+$guide-page-header-height:              600px;
+$guide-page-header-position:            relative;
 
-$guide-page-header-title-color:       $black-base;
-$guide-page-header-title-size:        150px;
-$guide-page-header-title-spacing:     -5px;
-$guide-page-header-title-weight:      900;
-$guide-page-header-title-transform:   uppercase;
+$guide-page-header-title-color:         $black-base;
+$guide-page-header-title-size:          150px;
+$guide-page-header-title-spacing:       -5px;
+$guide-page-header-title-weight:        900;
+$guide-page-header-title-transform:     uppercase;
 
-$guide-page-article-margin:           $spacer-alpha;
+$guide-page-article-margin:             $spacer-alpha;
 
-$guide-page-article-content-border:   1px solid $grey-light;
-$guide-page-article-content-padding:  120px 0;
+$guide-page-article-content-border:     1px solid $grey-light;
+$guide-page-article-content-padding:    120px 0;
 
-$guide-page-article-label-color:      $purple-base;
-$guide-page-article-label-transform:  uppercase;
+$guide-page-article-label-color:        $purple-base;
+$guide-page-article-label-transform:    uppercase;
 
-$guide-page-article-link-color:       $grey-dark;
-$guide-page-article-link-display:     block;
-$guide-page-article-link-margin:      $spacer-delta;
+$guide-page-article-link-color:         $grey-dark;
+$guide-page-article-link-display:       block;
+$guide-page-article-link-margin:        $spacer-delta;
+
+$guide-page-article-link-color-active:  $blue-base;
 
 
 // Page Header
@@ -156,5 +158,9 @@ $guide-page-article-link-margin:      $spacer-delta;
     display: $guide-page-article-link-display;
     color: $guide-page-article-link-color;
     margin-bottom: $guide-page-article-link-margin;
+
+    &.is-active {
+      color: $guide-page-article-link-color-active;
+    }
   }
 }

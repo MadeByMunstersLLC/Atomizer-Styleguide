@@ -1,0 +1,39 @@
+icons:
+  - title: Down
+    src: icons/arrow-down-icon.svg
+  - title: Left
+    src: icons/arrow-left-icon.svg
+  - title: Right
+    src: icons/arrow-right-icon.svg
+  - title: Up
+    src: icons/arrow-up-icon.svg
+  - title: Up/Down
+    src: icons/arrow-up-down-icon.svg
+  - title: Bell
+    src: icons/notification-icon.svg
+  - title: Check
+    src: icons/checkmark-icon.svg
+  - title: Close
+    src: icons/close-icon.svg
+  - title: Date
+    src: icons/date-icon.svg
+  - title: Duplicate
+    src: icons/duplicate-icon.svg
+  - title: Edit
+    src: icons/edit-icon.svg
+  - title: Fail
+    src: icons/fail-icon.svg
+  - title: Grid
+    src: icons/grid-icon.svg
+  - title: Minus
+    src: icons/minus-icon.svg
+  - title: Pass
+    src: icons/pass-icon.svg
+  - title: Plus
+    src: icons/plus-icon.svg
+  - title: Select
+    src: icons/arrow-select-icon.svg
+  - title: Settings
+    src: icons/settings-icon.svg
+  - title: Update
+    src: icons/update-icon.svg

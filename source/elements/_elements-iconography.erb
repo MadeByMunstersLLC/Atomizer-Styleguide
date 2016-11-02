@@ -2,8 +2,23 @@
   <div class="content-section__row">
     <div class="content-section__header">
       <h2 class="title">Iconography</h2>
-      <p class="text--large">Atomizer leverages one typeface and two weights for its interface. Proxima Nova, designed by Mark Simonson Studio, is a strong sans-serif font that gives the interface a professional, business look, yet, provides just enough unique personality.</p>
-      <p class="content__text">The dominate weight used is regular. This style of the font should be used in almost all cases. When a text elements needs additional attention the bold weight can then be used. You will notice that the bold weight is used primarly for actions, labels, and areas where strong emphasis is needed. Below you will find various versions of the font and how it is to be used throughout the application's interface.</p>
+      <p class="text--large">Basic shapes mixed with straight lines define the iconography set for Atomizer. The simple icons are used to draw attention to items users can take action on.</p>
+      <p class="content__text">Icons should be used sparingly throughout the application's interface. When text takes up too much room or an action needs special attention an icon may be used. Below is a sample of the icons avaliable to use. Icons will be added to the kit as the interface grows. If you need icons that are not in your set, please down the updated set below.</p>
     </div>
+  </div>
+  <div class="content-section__row">
+    <ul class="list">
+      <% data.element_icons.icons.each do |i| %>
+        <li class="icon">
+          <span class="icon__box">
+            <%= inline_svg(i.src, class: 'icon__image') %>
+          </span>
+          <h5 class="icon__title"><%= i.title %></h5>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="content-section__row">
+    <a href="../images/downloads/icons.zip" class="button--alpha" download>Download Icons</a>
   </div>
 </div>

@@ -29,7 +29,8 @@ $(window).scroll(function(){
       $navigationMenuIcon = $('.guide__navigation__menu-icon'),
       className = 'has-scrolled';
 
-    if($(window).scrollTop() > (pageHeader + pageHeaderHeight)){
+    if($(window).scrollTop() > pageHeaderHeight){
+      console.log('scrolling');
       $navigationLogo.addClass(className);
       $navigationMenuIcon.addClass(className);
     }
