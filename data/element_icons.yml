@@ -31,6 +31,8 @@ icons:
     src: icons/pass-icon.svg
   - title: Plus
     src: icons/plus-icon.svg
+  - title: Search
+    src: icons/search-icon.svg
   - title: Select
     src: icons/arrow-select-icon.svg
   - title: Settings

@@ -30,7 +30,6 @@ $(window).scroll(function(){
       className = 'has-scrolled';
 
     if($(window).scrollTop() > pageHeaderHeight){
-      console.log('scrolling');
       $navigationLogo.addClass(className);
       $navigationMenuIcon.addClass(className);
     }
