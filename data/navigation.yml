@@ -29,9 +29,9 @@ site_navigation:
       - section_title: Form Elements
         section_link: 'components/#form-elements'
         section_page_link: '#form-elements'
-      - section_title: Highlight
-        section_link: 'components/#highlight'
-        section_page_link: '#highlight'
+      - section_title: Highlights
+        section_link: 'components/#highlights'
+        section_page_link: '#highlights'
       - section_title: Links
         section_link: 'components/#links'
         section_page_link: '#links'
@@ -50,21 +50,21 @@ site_navigation:
       - section_title: Tooltips
         section_link: 'components/#tooltips'
         section_page_link: '#tooltips'
-  - section_title: Design Modules
-    section_url: modules
-    sections:
-      - section_title: Navigation
-        section_link: 'modules/#navigation'
-        section_page_link: '#navigation'
-      - section_title: Page Header
-        section_link: 'modules/#page-header'
-        section_page_link: '#page-header'
-      - section_title: Page Header Tabs
-        section_link: 'modules/#page-header-tabs'
-        section_page_link: '#page-header-tabs'
-  - section_title: Design Concepts
-    section_url: concepts
-    sections:
-      - section_title: Sass Structure
-        section_link: 'concepts/#sass'
-        section_page_link: '#sass'
+  # - section_title: Design Modules
+  #   section_url: modules
+  #   sections:
+  #     - section_title: Navigation
+  #       section_link: 'modules/#navigation'
+  #       section_page_link: '#navigation'
+  #     - section_title: Page Header
+  #       section_link: 'modules/#page-header'
+  #       section_page_link: '#page-header'
+  #     - section_title: Page Header Tabs
+  #       section_link: 'modules/#page-header-tabs'
+  #       section_page_link: '#page-header-tabs'
+  # - section_title: Design Concepts
+  #   section_url: concepts
+  #   sections:
+  #     - section_title: Sass Structure
+  #       section_link: 'concepts/#sass'
+  #       section_page_link: '#sass'
