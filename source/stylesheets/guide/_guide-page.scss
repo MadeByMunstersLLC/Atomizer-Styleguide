@@ -27,6 +27,14 @@ $guide-page-article-link-margin:        $spacer-delta;
 $guide-page-article-link-color-active:  $blue-base;
 
 
+// Page Divider
+.guide__divider {
+  border: none;
+  border-bottom: 1px solid $grey-light;
+  margin: 120px 0;
+}
+
+
 // Page Header
 .guide__page-header {
   @include position($guide-page-header-position);
@@ -36,10 +44,6 @@ $guide-page-article-link-color-active:  $blue-base;
 
   @include media($medium) {
     height: $guide-page-header-height;
-  }
-
-  &.guide__page-header--full {
-    height: 100vh;
   }
 
   .title {

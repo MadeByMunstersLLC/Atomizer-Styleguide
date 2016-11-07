@@ -4,6 +4,7 @@ var $tabLink = $('.tab__item-link');
 $(document).ready(function() {
   $tabLink.on('click', function(e)  {
     e.preventDefault();
+    e.stopPropagation();
 
     var currentAttrValue = $(this).attr('href'),
         $tabParent = $('.tab__item'),
