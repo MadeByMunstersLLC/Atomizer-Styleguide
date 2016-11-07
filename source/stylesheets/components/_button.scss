@@ -19,6 +19,8 @@ $button-input-padding:              0 20px;
 $button-hover-cursor:               pointer;
 $button-hover-opacity:              1;
 
+$button-hover-cursor-disabled:      not-allowed;
+
 $button-focus-border:               none;
 $button-focus-outline:              none;
 $button-focus-text-decoration:      none;
@@ -44,7 +46,7 @@ $button-dropdown-link-weight:       600;
 %button {
   @include font-type($primary-sans-serif, normal, 700);
   @include s-foxtrot;
-  @include transition(border-radius, 0.5s, ease-in-out);
+  @include transition(background-color 0.3s ease);
   border: $button-border;
   border-radius: $button-radius;
   display: $button-display;
@@ -90,7 +92,7 @@ $button-dropdown-link-weight:       600;
       // Disabled Button
       @if $button == 'disabled' {
         background-color: $bg-color;
-        cursor: not-allowed;
+        cursor: $button-hover-cursor-disabled;
       }
     }
 

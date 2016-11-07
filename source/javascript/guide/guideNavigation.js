@@ -18,23 +18,3 @@ $navigationTrigger.on('click', function() {
   $(this).parents($navigation).find($navigationModal).toggleClass(navigationActive);
 
 });
-
-
-// Change logo color
-
-$(window).scroll(function(){
-  var pageHeader = $(".guide__navigation").offset().top,
-      pageHeaderHeight = $(".guide__page-header").outerHeight(),
-      $navigationLogo = $('.guide-navigation__logo'),
-      $navigationMenuIcon = $('.guide__navigation__menu-icon'),
-      className = 'has-scrolled';
-
-    if($(window).scrollTop() > pageHeaderHeight){
-      $navigationLogo.addClass(className);
-      $navigationMenuIcon.addClass(className);
-    }
-    else{
-      $navigationLogo.removeClass(className);
-      $navigationMenuIcon.removeClass(className);
-    }
-});

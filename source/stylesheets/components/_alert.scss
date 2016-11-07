@@ -42,11 +42,9 @@ $alert-close-transition:   0.5s opacity ease;
     border-color: $border-color;
     color: $color;
 
-
     #app-icon {
       fill: $border-color;
     }
-
 
     // Hide Alert
       // NOTE: This class should be more descriptive. Possibly is-hidden if close icon is clicked to hide the alert.

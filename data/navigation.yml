@@ -38,7 +38,7 @@ site_navigation:
       - section_title: Modals
         section_link: 'components/#modals'
         section_page_link: '#modals'
-      - section_title: Popout
+      - section_title: Popouts
         section_link: 'components/#popout'
         section_page_link: '#popout'
       - section_title: Tables

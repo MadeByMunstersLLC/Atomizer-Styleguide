@@ -14,6 +14,7 @@ $table-header-item-transform: uppercase;
 $table-header-item-weight:    600;
 
 $table-body-item-border:      1px solid $grey-light;
+$table-body-item-line-height: 1.5;
 $table-body-item-padding:     $spacer-charlie $spacer-delta;
 
 
@@ -43,4 +44,5 @@ $table-body-item-padding:     $spacer-charlie $spacer-delta;
 .table__body-item {
   border-bottom: $table-body-item-border;
   padding: $table-body-item-padding;
+  line-height: $table-body-item-line-height;
 }

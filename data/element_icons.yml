@@ -25,6 +25,8 @@ icons:
     src: icons/fail-icon.svg
   - title: Grid
     src: icons/grid-icon.svg
+  - title: Help
+    src: icons/help-icon.svg
   - title: Minus
     src: icons/minus-icon.svg
   - title: Pass

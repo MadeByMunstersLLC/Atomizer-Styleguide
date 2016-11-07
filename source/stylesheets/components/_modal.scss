@@ -60,7 +60,6 @@ $modal-trigger-icon-width:      15px;
 }
 
 .modal__body {
-  @include animation(fade-in-up 0.4s linear);
   @include box-shadow($modal-body-box-spread, $modal-body-box-color);
   @include position($modal-body-position, $modal-body-top-position $modal-body-right-position null $modal-body-left-position);
   background-color: $modal-body-background;

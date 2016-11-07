@@ -1,0 +1,81 @@
+<div class="page-article__content-section" id="tabs">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Tabs</h2>
+      <p class="text--large">Separate content into sections.</p>
+      <p class="text">Do you need to split a complex view up to make it more manageable? Just use tabs. This component should be used as an in-page navigation tool. Tabs are meant to split complicated views up into simplified subviews that allow a user to focus in on one specific task.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <div class="tabs">
+      <ul class="tab__list" id="tab__list-example">
+        <li class="tab__item">
+          <a href="#tab1" class="tab__item-link is-active">Tab Label</a>
+        </li>
+        <li class="tab__item">
+          <a href="#tab2" class="tab__item-link">Tab Label</a>
+        </li>
+        <li class="tab__item">
+          <a href="#tab3" class="tab__item-link">Tab Label</a>
+        </li>
+      </ul>
+      <div class="tab__pane">
+        <div id="tab1" class="tab__content is-active">
+          <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+        </div>
+        <div id="tab2" class="tab__content">
+          <p> Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+        </div>
+        <div id="tab3" class="tab__content">
+          <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Tabs -->
+  <div class="tabs">
+
+    <!-- Tab Navigation -->
+    <ul class="tab__list" id="tab__list-example">
+      <li class="tab__item">
+        <a href="#tab1" class="tab__item-link is-active">Tab Label</a>
+      </li>
+      <li class="tab__item">
+        <a href="#tab2" class="tab__item-link">Tab Label</a>
+      </li>
+      <li class="tab__item">
+        <a href="#tab3" class="tab__item-link">Tab Label</a>
+      </li>
+    </ul>
+
+    <!-- Tab Pane -->
+    <div class="tab__pane">
+      <div id="tab1" class="tab__content is-active">
+        <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+      </div>
+      <div id="tab2" class="tab__content">
+        <p> Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+      </div>
+      <div id="tab3" class="tab__content">
+        <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+      </div>
+    </div>
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create tabs.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+      </tbody>
+    </table>
+  </div>
+</div>

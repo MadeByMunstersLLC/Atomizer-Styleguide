@@ -2,10 +2,12 @@
 // ========================================
 
 // Variables
+$guide-navigation-background:               $black-base;
 $guide-navigation-line-height:              0;
 $guide-navigation-padding:                  $spacer-charlie;
-$guide-navigation-position:                 fixed;
+$guide-navigation-position:                 absolute;
 $guide-navigation-width:                    100%;
+$guide-navigation-z-index:                  999;
 
 $guide-navigation-btn-bg:                   transparent;
 $guide-navigation-btn-border:               none;
@@ -36,21 +38,11 @@ $guide-navigation-overlay-z-index-active:   1;
 // Structure
 .guide__navigation {
   @include position($guide-navigation-position);
+  background-color: $guide-navigation-background;
   line-height: $guide-navigation-line-height;
   padding: $guide-navigation-padding;
   width: $guide-navigation-width;
-
-  &.is-active {
-    z-index: 100;
-
-    .guide__navigation__menu-icon span {
-      background-color: $guide-navigation-i-span-bg;
-    }
-
-    .guide-navigation__logo #atomizer-logo {
-      fill: $guide-navigation-i-span-bg;
-    }
-  }
+  z-index: $guide-navigation-z-index;
 }
 
 .guide__navigation--left,
@@ -65,13 +57,6 @@ $guide-navigation-overlay-z-index-active:   1;
 .guide__navigation--left a {
   display: inline-block;
   line-height: 0;
-}
-
-.guide-navigation__logo.has-scrolled {
-
-  #atomizer-logo {
-    fill: $black-base;
-  }
 }
 
 .guide__navigation__menu-button {
@@ -109,10 +94,6 @@ $guide-navigation-overlay-z-index-active:   1;
     &:nth-child(3) { top: 6px; }
 
     &:nth-child(4) { top: 12px; }
-  }
-
-  &.has-scrolled span {
-    background-color: $black-base;
   }
 
   &.is-active {
