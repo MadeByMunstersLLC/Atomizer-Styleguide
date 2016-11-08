@@ -8,7 +8,7 @@ $form-input-border:              1px solid $grey-light;
 $form-input-border-radius:       1px;
 $form-input-color:               $black-base;
 $form-input-color-placeholder:   $grey-dark;
-$form-input-height:              45px;
+$form-input-height:              40px;
 $form-input-margin:              $spacer-echo 0 $spacer-charlie;
 $form-input-padding:             10px;
 
@@ -73,6 +73,11 @@ select {
     border: $form-input-border-inactive;
     color: $grey-dark;
     cursor: not-allowed;
+  }
+
+  // Form Input No Border
+  &.input--no-border {
+    border: none;
   }
 
   // Form Input Add On

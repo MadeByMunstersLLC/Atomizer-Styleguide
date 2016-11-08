@@ -8,28 +8,24 @@
   </div>
   <div class="content-section__row">
     <div class="tabs">
-      <ul class="tab__list" id="tab__list-example">
-        <li class="tab__item">
-          <a href="#tab1" class="tab__item-link is-active">Tab Label</a>
-        </li>
-        <li class="tab__item">
-          <a href="#tab2" class="tab__item-link">Tab Label</a>
-        </li>
-        <li class="tab__item">
-          <a href="#tab3" class="tab__item-link">Tab Label</a>
-        </li>
+      <ul class="tab__list">
+        <li class="tab__item is-active" data-tab="tab-1">Edit Scenario</li>
+        <li class="tab__item" data-tab="tab-2">Scenario Flow</li>
+        <li class="tab__item" data-tab="tab-3">Scenario History</li>
+        <li class="tab__item" data-tab="tab-4">Settings</li>
       </ul>
-      <div class="tab__pane">
-        <div id="tab1" class="tab__content is-active">
-          <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
-        </div>
-        <div id="tab2" class="tab__content">
-          <p> Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
-        </div>
-        <div id="tab3" class="tab__content">
-          <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
-        </div>
-      </div>
+    </div>
+    <div id="tab-1" class="tab__content is-active">
+      Tab Content 1
+    </div>
+    <div id="tab-2" class="tab__content">
+      Tab Content 2
+    </div>
+    <div id="tab-3" class="tab__content">
+      Tab Content 3
+    </div>
+    <div id="tab-4" class="tab__content">
+      Tab Content 4
     </div>
   </div>
   <div class="content-section__row">
@@ -37,32 +33,30 @@
 <% code("html") do %>
   <!-- Tabs -->
   <div class="tabs">
-
-    <!-- Tab Navigation -->
-    <ul class="tab__list" id="tab__list-example">
-      <li class="tab__item">
-        <a href="#tab1" class="tab__item-link is-active">Tab Label</a>
-      </li>
-      <li class="tab__item">
-        <a href="#tab2" class="tab__item-link">Tab Label</a>
-      </li>
-      <li class="tab__item">
-        <a href="#tab3" class="tab__item-link">Tab Label</a>
-      </li>
+    <!-- Tab list -->
+    <ul class="tab__list">
+      <li class="tab__item is-active" data-tab="tab-1">Edit Scenario</li>
+      <li class="tab__item" data-tab="tab-2">Scenario Flow</li>
+      <li class="tab__item" data-tab="tab-3">Scenario History</li>
+      <li class="tab__item" data-tab="tab-4">Settings</li>
     </ul>
+  </div>
 
-    <!-- Tab Pane -->
-    <div class="tab__pane">
-      <div id="tab1" class="tab__content is-active">
-        <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
-      </div>
-      <div id="tab2" class="tab__content">
-        <p> Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
-      </div>
-      <div id="tab3" class="tab__content">
-        <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
-      </div>
-    </div>
+  <!-- Tab Panes -->
+  <div id="tab-1" class="tab__content is-active">
+    Tab Content 1
+  </div>
+
+  <div id="tab-2" class="tab__content">
+    Tab Content 2
+  </div>
+
+  <div id="tab-3" class="tab__content">
+    Tab Content 3
+  </div>
+
+  <div id="tab-4" class="tab__content">
+    Tab Content 4
   </div>
 <% end %><br/>
   </div>
@@ -86,14 +80,6 @@
         <tr>
           <td class="table__body-item" style="width:30%">.tab__item</td>
           <td class="table__body-item">This should be applied to the list element that contains the tab navigation link. <% code("html") do %><li class"tab__item"></li><% end %></td>
-        </tr>
-        <tr>
-          <td class="table__body-item" style="width:30%">.tab__item-link</td>
-          <td class="table__body-item">This should be applied to the link that sits inside of the tab item element. <% code("html") do %><a href="#" class"tab__item-link"></a><% end %></td>
-        </tr>
-        <tr>
-          <td class="table__body-item" style="width:30%">.tab__pane</td>
-          <td class="table__body-item">This should be applied to the parent element that wraps the individual tab content sections. <% code("html") do %><div class"tab__pane"></p><% end %></td>
         </tr>
         <tr>
           <td class="table__body-item" style="width:30%">.tab__content</td>
