@@ -39,5 +39,7 @@ icons:
     src: icons/arrow-select-icon.svg
   - title: Settings
     src: icons/settings-icon.svg
+  - title: Trash
+    src: icons/trash-icon.svg
   - title: Update
     src: icons/update-icon.svg
