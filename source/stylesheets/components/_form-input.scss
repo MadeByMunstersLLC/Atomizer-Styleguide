@@ -21,7 +21,7 @@ $form-input-border-inactive:     1px solid $grey-light;
 $form-input-radius-zero:         0;
 
 $form-input-add-on-display:      inline-block;
-$form-input-add-on-height:       45px;
+$form-input-add-on-height:       40px;
 $form-input-add-on-padding:      0 $spacer-delta;
 
 
@@ -85,7 +85,7 @@ select {
     border-bottom-right-radius: $form-input-radius-zero;
     border-top-right-radius: $form-input-radius-zero;
     display: $form-input-add-on-display;
-    margin: -4px;
+    margin: -5px;
     width: auto;
   }
 }
