@@ -56,12 +56,12 @@ site_navigation:
       - section_title: Topbar
         section_link: 'modules/#topbar'
         section_page_link: '#topbar'
-      # - section_title: Page Header
-      #   section_link: 'modules/#page-header'
-      #   section_page_link: '#page-header'
-      # - section_title: Page Header Tabs
-      #   section_link: 'modules/#page-header-tabs'
-      #   section_page_link: '#page-header-tabs'
+      - section_title: Page Header
+        section_link: 'modules/#page-header'
+        section_page_link: '#page-header'
+      - section_title: Page Header Tabs
+        section_link: 'modules/#page-header-tabs'
+        section_page_link: '#page-header-tabs'
   # - section_title: Design Concepts
   #   section_url: concepts
   #   sections:
