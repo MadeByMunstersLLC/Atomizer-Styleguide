@@ -50,18 +50,18 @@ site_navigation:
       - section_title: Tooltips
         section_link: 'components/#tooltips'
         section_page_link: '#tooltips'
-  # - section_title: Design Modules
-  #   section_url: modules
-  #   sections:
-  #     - section_title: Navigation
-  #       section_link: 'modules/#navigation'
-  #       section_page_link: '#navigation'
-  #     - section_title: Page Header
-  #       section_link: 'modules/#page-header'
-  #       section_page_link: '#page-header'
-  #     - section_title: Page Header Tabs
-  #       section_link: 'modules/#page-header-tabs'
-  #       section_page_link: '#page-header-tabs'
+  - section_title: Design Modules
+    section_url: modules
+    sections:
+      - section_title: Topbar
+        section_link: 'modules/#topbar'
+        section_page_link: '#topbar'
+      # - section_title: Page Header
+      #   section_link: 'modules/#page-header'
+      #   section_page_link: '#page-header'
+      # - section_title: Page Header Tabs
+      #   section_link: 'modules/#page-header-tabs'
+      #   section_page_link: '#page-header-tabs'
   # - section_title: Design Concepts
   #   section_url: concepts
   #   sections:

@@ -16,5 +16,6 @@ $navigationTrigger.on('click', function() {
   $(this).parents().find($navigation).toggleClass(navigationActive);
   $(this).parents($navigation).find($navigationOverlay).toggleClass(navigationActive);
   $(this).parents($navigation).find($navigationModal).toggleClass(navigationActive);
+  $('body').toggleClass(navigationActive);
 
 });

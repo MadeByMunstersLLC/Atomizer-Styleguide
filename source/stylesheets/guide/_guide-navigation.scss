@@ -128,6 +128,11 @@ $guide-navigation-overlay-z-index-active:   1;
   margin: ($spacer-alpha * 2) 0 0 $spacer-charlie;
 }
 
+.guide__navigation__modal-links {
+  @include position(relative);
+  z-index: 100;
+}
+
 .guide__navigation__modal-item {
   @include span-columns(4 of 4);
 

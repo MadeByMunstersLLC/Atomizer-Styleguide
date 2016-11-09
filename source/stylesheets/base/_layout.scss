@@ -8,6 +8,12 @@ body {
   overflow-x: hidden;
 }
 
+body.is-active {
+  @include position(fixed);
+  overflow: hidden;
+  width: 100%;
+}
+
 
 // Clears + Resets
 .clear { clear: both; }
