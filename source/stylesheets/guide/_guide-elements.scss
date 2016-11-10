@@ -49,14 +49,9 @@
   text-align: center;
   margin: 0 auto;
 
-  @include media($medium) {
+  @include media($large) {
     @include omega-reset(2n);
-    @include omega(9n);
-    @include span-columns(1 of 9);
-  }
-
-  @include media($medium) {
-    @include omega-reset(9n);
+    @include omega(8n);
     @include span-columns(1.5 of 12);
   }
 

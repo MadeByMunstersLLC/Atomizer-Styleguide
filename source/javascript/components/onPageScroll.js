@@ -11,7 +11,6 @@ $('a[href^="#"]').on('click', function (e) {
     $(this).removeClass('is-active');
   });
 
-
   $(this).addClass('is-active');
     var target = this.hash,
         menu = target;
