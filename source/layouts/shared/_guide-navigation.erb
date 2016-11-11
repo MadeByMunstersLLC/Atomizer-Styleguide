@@ -1,7 +1,7 @@
 <header class="guide__navigation">
   <nav role="navigation">
     <div class="guide__navigation--left">
-      <% link_to '/', class: 'guide-navigation__logo' do %>
+      <% link_to "#{config[:root_url] ? config[:root_url] : '/'}", class: 'guide-navigation__logo' do %>
         <%= inline_svg('logos/logo.svg') %>
       <% end %>
     </div>
