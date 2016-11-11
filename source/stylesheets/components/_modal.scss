@@ -9,8 +9,6 @@ $modal-position:                absolute;
 
 $modal-container-position:      relative;
 
-$modal-container-width:         500px;
-
 $modal-overlay-background:      rgba(48, 55, 67, 0.8);
 $modal-overlay-dimensions:      100%;
 $modal-overlay-postion:         fixed;
@@ -23,15 +21,11 @@ $modal-body-box-spread:         0 0 15px;
 $modal-body-box-color:          rgba(48, 55, 67, 1);
 $modal-border-radius:           0;
 $modal-body-height:             auto;
-$modal-body-margin:             100px auto 0;
+$modal-body-margin:             ($spacer-alpha * 2) auto;
 $modal-body-opacity:            0;
 $modal-body-opacity-active:     1;
-$modal-body-position:           fixed;
-$modal-body-bottom-position:    0;
-$modal-body-left-position:      0;
-$modal-body-right-position:     0;
-$modal-body-top-position:       0;
-$modal-body-width:              450px;
+$modal-body-position:           relative;
+$modal-body-width:              500px;
 $modal-body-z-index:            99999;
 
 $modal-close-cords:             -31px -31px null null;
@@ -49,6 +43,7 @@ $modal-close-icon-width:        15px;
 
 // Structure
 .modal {
+  @include clearfix;
   @include position($modal-position);
   cursor: default;
   visibility: hidden;
@@ -73,8 +68,6 @@ $modal-close-icon-width:        15px;
   @include position($modal-container-position);
 }
 
-
-// Structure
 .modal__overlay {
   @include position($modal-overlay-postion, $modal-overlay-top-position null null $modal-overlay-left-position);
   @include transition(opacity 0.75s ease);
@@ -88,13 +81,14 @@ $modal-close-icon-width:        15px;
 
 .modal__body {
   @include box-shadow($modal-body-box-spread, $modal-body-box-color);
-  @include position($modal-body-position, $modal-body-top-position $modal-body-right-position null $modal-body-left-position);
+  @include clearfix;
+  @include position($modal-body-position);
   @include transition(all 1.5s ease);
   background-color: $modal-body-background;
   border-radius: $modal-border-radius;
   border: none;
   height: $modal-body-height;
-  margin: -200px auto 0;
+  margin: -($spacer-alpha * 2) auto 0;
   opacity: $modal-body-opacity;
   padding: $modal-padding;
   width: $modal-body-width;
