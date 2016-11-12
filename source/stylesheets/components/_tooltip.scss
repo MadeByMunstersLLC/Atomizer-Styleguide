@@ -6,11 +6,14 @@
 $tooltip-align:              center;
 $tooltip-background:         $white-base;
 $tooltip-margin:             0 auto;
-$tooltip-offset:             null 0 1.5em -1.25em;
+$tooltip-offset:             null -7em 2.5em null;
+$tool-tip-opacity-0:         0;
+$tool-tip-opacity-1:         1;
 $tooltip-position:           absolute;
 $tooltip-shadow-color:       rgba(35,35,35,0.20);
 $tooltip-shadow-spread:      0 0 10px;
 $tooltip-transition:         opacity 0.35s ease-in-out;
+$tooltip-visibiltiy:         visible;
 $tooltip-width:              225px;
 $tooltip-z-index:            10;
 
@@ -35,15 +38,14 @@ $tooltip-text-shadow-spread: 0 5px 10px;
 
   &:focus,
   &:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
+    opacity: $tool-tip-opacity-1;
+    visibility: $tooltip-visibiltiy;
   }
 
   .tooltip__label,
   .tooltip__icon {
-    display: inline-block;
+    display: $tooltip-item-display;
     cursor: help;
-    margin-bottom: 0;
   }
 
   .tooltip__icon {
@@ -63,7 +65,7 @@ $tooltip-text-shadow-spread: 0 5px 10px;
   @include box-shadow($tooltip-shadow-spread, $tooltip-shadow-color);
   @include position($tooltip-position, $tooltip-offset);
   @include transition ($tooltip-transition);
-  opacity: 0;
+  opacity: $tool-tip-opacity-0;
   text-align: $tooltip-align;
   width: $tooltip-width;
   visibility: hidden;
