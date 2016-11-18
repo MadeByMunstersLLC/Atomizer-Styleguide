@@ -22,6 +22,22 @@
           </li>
         </ul>
       </div>
+    </div><br/> <br/> <br/>
+    <div class="popout__container">
+      <a href="#" class="popout__trigger link--bravo">Popout Inverse Trigger</a>
+      <div class="popout popout--inverse">
+        <ul class="popout__list">
+          <li class="popout__item">
+            <a href="#" class="popout__link">Popout List Item Link</a>
+          </li>
+          <li class="popout__item">
+            <a href="#" class="popout__link">Popout List Item Link</a>
+          </li>
+          <li class="popout__item">
+            <a href="#" class="popout__link">Popout List Item Link</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="content-section__row">
@@ -33,7 +49,7 @@
     <!-- Popout Trigger -->
     <a href="#" class="popout__trigger link--alpha">Popout Trigger</a>
 
-    <!-- Popout with link list -->
+    <!-- Popout Standard -->
     <div class="popout">
       <ul class="popout__list">
         <li class="popout__item">
@@ -44,6 +60,21 @@
         </li>
         <li class="popout__item">
           <a href="#" class="popout__link">Popout Link</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Popout Inverse -->
+    <div class="popout popout--inverse">
+      <ul class="popout__list">
+        <li class="popout__item">
+          <a href="#" class="popout__link">Popout List Item Link</a>
+        </li>
+        <li class="popout__item">
+          <a href="#" class="popout__link">Popout List Item Link</a>
+        </li>
+        <li class="popout__item">
+          <a href="#" class="popout__link">Popout List Item Link</a>
         </li>
       </ul>
     </div>
@@ -83,6 +114,14 @@
         <tr>
           <td class="table__body-item" style="width:30%">.popout__link</td>
           <td class="table__body-item">Apply to the list item link. <% code("html") do %><a href="#" class="popout__link"> <!-- Popout link --> </a><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.popout--inverse</td>
+          <td class="table__body-item">Apply this modifier to the popout element to make it appear above the popout trigger rather than below it. <% code("html") do %><div class="popout popout--inverse"> <!-- Popout Inverse Content --> </div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.popout--max-height</td>
+          <td class="table__body-item">Apply this modifier to the popout element if the list of links inside is lengthy. <% code("html") do %><div class="popout popout--inverse"> <!-- Popout Inverse Content --> </div><% end %></td>
         </tr>
       </tbody>
     </table>

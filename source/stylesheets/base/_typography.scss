@@ -55,12 +55,26 @@ dd{
 
 a {
   @include font-type(inherit, normal, 400);
+  @include transition(all 0.5s ease);
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   &:active,
   &:focus {
     outline: none;
   }
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
 }
 
 

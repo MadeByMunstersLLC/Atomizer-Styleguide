@@ -26,6 +26,9 @@ site_navigation:
       - section_title: Cards
         section_link: 'components/#cards'
         section_page_link: '#cards'
+      - section_title: Chips
+        section_link: 'components/#chips'
+        section_page_link: '#chips'
       - section_title: Form Elements
         section_link: 'components/#form-elements'
         section_page_link: '#form-elements'
