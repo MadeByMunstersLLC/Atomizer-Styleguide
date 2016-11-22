@@ -71,9 +71,12 @@ site_navigation:
       - section_title: Page Header Tabs
         section_link: 'modules/#page-header-tabs'
         section_page_link: '#page-header-tabs'
-  # - section_title: Design Concepts
-  #   section_url: concepts
-  #   sections:
-  #     - section_title: Sass Structure
-  #       section_link: 'concepts/#sass'
-  #       section_page_link: '#sass'
+  - section_title: Design Layout
+    section_url: layout
+    sections:
+      - section_title: Grid
+        section_link: 'layout/#grid'
+        section_page_link: '#grid'
+      - section_title: Offsets
+        section_link: 'layout/#offsets'
+        section_page_link: '#offsets'
