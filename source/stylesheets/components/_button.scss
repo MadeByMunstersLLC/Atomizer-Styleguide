@@ -5,13 +5,13 @@
 $button-border:                     none;
 $button-display:                    inline-block;
 $button-line-height:                normal;
-$button-padding:                    15px 30px;
+$button-padding:                    $spacer-delta $spacer-charlie;
 $button-radius:                     1px;
 $button-text-align:                 center;
 $button-text-transform:             uppercase;
 $button-transition:                 all 0.3s ease-in-out;
 
-$button-small-padding:              ($button-padding / 2);
+$button-small-padding:              ($spacer-delta / 2) $spacer-delta;
 
 $button-input-height:               45px;
 $button-input-padding:              0 20px;
@@ -29,11 +29,11 @@ $button-add-on-container-display:   inline-block;
 $button-add-on-container-position:  relative;
 
 $button-add-on-display:             inline-block;
-$button-add-on-margin:              -5px;
+$button-add-on-margin:              -4px;
 $button-add-on-padding:             $spacer-delta;
 $button-add-on-radius:              0;
 
-$button-dropdown-cords:             47px 0 null 0;
+$button-dropdown-cords:             47px 1px null 0;
 $button-dropdown-display:           none;
 $button-dropdown-position:          absolute;
 
@@ -46,7 +46,7 @@ $button-dropdown-link-weight:       600;
 %button {
   @include font-type($primary-sans-serif, normal, 700);
   @include s-foxtrot;
-  @include transition(background-color 0.3s ease);
+  @include transition($button-transition);
   border: $button-border;
   border-radius: $button-radius;
   display: $button-display;
@@ -113,6 +113,32 @@ $button-dropdown-link-weight:       600;
     }
   }
 
+  // Remove Border Radius from Button Add on
+  .button--add-on--#{$button} {
+    border-bottom-left-radius: $button-add-on-radius;
+    border-top-left-radius: $button-add-on-radius;
+  }
+
+  // Button Outline
+  .button-outline--#{$button} {
+    @extend %button;
+    background: transparent;
+    border: 1px solid $bg-color;
+    color: $color;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    i {
+      vertical-align: middle;
+    }
+
+    i #app-icon {
+      fill: $bg-color;
+    }
+  }
+
   // Button Add On
   .button--add-on--#{$button} {
     background: darken($bg-color, 10%);
@@ -123,6 +149,31 @@ $button-dropdown-link-weight:       600;
       cursor: pointer;
     }
   }
+
+  // Moz Fix
+  @-moz-document url-prefix() {
+    .button--add-on--#{$button} {
+      padding: 16px $spacer-delta;
+    }
+  }
+}
+
+
+
+// Button Sizes
+.button--small {
+  @include s-golf;
+  padding: $button-small-padding;
+}
+
+.button--full {
+  display: block;
+  width: 100%;
+}
+
+.button--form {
+  height: 40px;
+  padding: 0 $spacer-delta;
 }
 
 
@@ -134,7 +185,7 @@ $button-dropdown-link-weight:       600;
   &.is-active {
 
     .button--add-on__dropdown {
-      @include box-shadow(2px 6px 9px, rgba(48, 54, 67, 0.4));
+      @include box-shadow(2px 6px 5px, rgba(48, 54, 67, 0.2));
       display: block;
     }
 

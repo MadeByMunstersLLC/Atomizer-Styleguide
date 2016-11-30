@@ -1,4 +1,8 @@
 icons:
+  - title: Archive
+    src: icons/archive-icon.svg
+  - title: Unarchive
+    src: icons/unarchive-icon.svg
   - title: Down
     src: icons/arrow-down-icon.svg
   - title: Left
@@ -9,6 +13,8 @@ icons:
     src: icons/arrow-up-icon.svg
   - title: Up/Down
     src: icons/arrow-up-down-icon.svg
+  - title: Atom
+    src: icons/atom-icon.svg
   - title: Bell
     src: icons/notification-icon.svg
   - title: Check
@@ -23,6 +29,8 @@ icons:
     src: icons/edit-icon.svg
   - title: Fail
     src: icons/fail-icon.svg
+  - title: File
+    src: icons/file-icon.svg
   - title: Grid
     src: icons/grid-icon.svg
   - title: Help
@@ -31,15 +39,29 @@ icons:
     src: icons/minus-icon.svg
   - title: Pass
     src: icons/pass-icon.svg
+  - title: Pause
+    src: icons/pause-icon.svg
+  - title: Play
+    src: icons/pause-icon.svg
   - title: Plus
     src: icons/plus-icon.svg
+  - title: Preview
+    src: icons/preview-icon.svg
+  - title: Refresh
+    src: icons/refresh-icon.svg
   - title: Search
     src: icons/search-icon.svg
   - title: Select
     src: icons/arrow-select-icon.svg
   - title: Settings
     src: icons/settings-icon.svg
+  - title: Star 1
+    src: icons/star-filled-icon.svg
+  - title: Star 2
+    src: icons/star-outline-icon.svg
   - title: Trash
     src: icons/trash-icon.svg
   - title: Update
     src: icons/update-icon.svg
+  - title: User
+    src: icons/user-icon.svg
