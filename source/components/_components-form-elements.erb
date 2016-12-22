@@ -140,4 +140,36 @@
       </tbody>
     </table>
   </div>
+  <div class="content-section__row">
+    <label class="form__label input--error">Form Label</label>
+    <input type="text" placeholder="Placeholder text here" class="input--error" />
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Form Label / Input With Error -->
+  <label class="form__label input--error">Form Label</label>
+  <input type="text" placeholder="Placeholder text here" class="input--error" />
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to add inline error messages.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.form__label.input--error</td>
+          <td class="table__body-item">Place this class on the label that corresponds with the input that contains the error. <% code("html") do %> <label class="form__label input--error">Form Label</label> <% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">input.input--error</td>
+          <td class="table__body-item">Place this class on the input that contains the error. <% code("html") do %> <input type="text" placeholder="Placeholder text here" class="input--error" /> <% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

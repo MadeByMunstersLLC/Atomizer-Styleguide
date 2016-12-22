@@ -10,6 +10,11 @@ $form-label-transform:      uppercase;
 
 $form-label-offset-margin:  $spacer-charlie + 3px;
 
+$fieldset-border:           1px solid $grey-base;
+$fieldset-margin:           0 0 $spacer-charlie;
+
+$form-label-error-color:    $red-base;
+
 
 // Structure
 label,
@@ -26,4 +31,16 @@ label,
   // NOTE: Use to position button correctly on horizontal forms
 .label--offset {
   margin-top: $form-label-offset-margin;
+}
+
+// Fieldset
+.fieldset--border {
+  border-bottom: $fieldset-border;
+  margin: $fieldset-margin;
+}
+
+
+// Label Modifiers
+.input--error {
+  color: $form-label-error-color;
 }
