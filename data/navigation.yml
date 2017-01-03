@@ -77,6 +77,9 @@ site_navigation:
       - section_title: Grid
         section_link: 'layout/#grid'
         section_page_link: '#grid'
-      - section_title: Offsets
+      - section_title: Grid Offsets
         section_link: 'layout/#offsets'
         section_page_link: '#offsets'
+      - section_title: Layouts
+        section_link: 'layout/#layouts'
+        section_page_link: '#layouts'
