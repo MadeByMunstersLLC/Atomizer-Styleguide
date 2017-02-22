@@ -42,7 +42,7 @@ icons:
   - title: Pause
     src: icons/pause-icon.svg
   - title: Play
-    src: icons/pause-icon.svg
+    src: icons/play-icon.svg
   - title: Plus
     src: icons/plus-icon.svg
   - title: Preview
