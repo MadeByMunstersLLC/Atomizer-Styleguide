@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Atomizer Style Guide | Red Ventures</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+    <!-- Favicons -->
+    <link href="../images/favicon.png" rel="icon" type="image/png" />
+
+    <!-- Stylesheets -->
+    <link href="../stylesheets/application.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/syntax.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fonts -->
+    <script src="https://use.typekit.net/gzo3ihf.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body class="modules modules_index">
+    <header class="guide__navigation">
+  <nav role="navigation">
+    <div class="guide__navigation--left">
+<a class="guide-navigation__logo" href="/Atomizer-Styleguide/">        <svg width="155" height="16" viewbox="0 0 155 16" xmlns="http://www.w3.org/2000/svg"><title>ATOMIZER.</title>
+<path id="atomizer-logo" d="M15.32 15L9.32.9H6.48L.48 15h3.14l1.28-3.14h5.92L12.1 15h3.22zm-5.6-5.86H6L7.86 4.6l1.86 4.54zm21.66-5.3V1h-11.6v2.84h4.26V15h3.08V3.84h4.26zM52.5 8v-.04c0-3.98-3.1-7.2-7.42-7.2S37.62 4.02 37.62 8v.04c0 3.98 3.1 7.2 7.42 7.2S52.5 11.98 52.5 8zm-3.22.04c0 2.4-1.72 4.36-4.2 4.36-2.48 0-4.24-2-4.24-4.4v-.04c0-2.4 1.72-4.36 4.2-4.36 2.48 0 4.24 2 4.24 4.4v.04zM74.34 15V1h-3.32l-3.68 5.92L63.66 1h-3.32v14h3.02V5.92l3.9 5.92h.08l3.94-5.98V15h3.06zm11.68 0V1h-3.08v14h3.08zm19.84 0v-2.7h-7.7l7.7-8.96V1H94.44v2.7h7.46l-7.7 8.96V15h11.66zm18.68 0v-2.74h-7.6V9.32h6.6V6.58h-6.6V3.74h7.5V1h-10.56v14h10.66zm19.94 0l-3.42-5c1.78-.66 3-2.08 3-4.34v-.04c0-2.88-1.98-4.62-5.28-4.62h-6.4v14h3.08v-4.48h2.42l3 4.48h3.6zm-3.54-9.18c0 1.18-.86 1.98-2.36 1.98h-3.12V3.78h3.06c1.5 0 2.42.68 2.42 2v.04zm13.8 9.18v-3.2h-3.24V15h3.24z" fill="#FFFFFF" fill-rule="evenodd"></path></svg>
+</a>    </div>
+    <div class="guide__navigation--right">
+      <button class="guide__navigation__menu-button" type="button" aria-label="Menu" aria-controls="navigation">
+        <div class="guide__navigation__menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </nav>
+</header>
+<div class="guide__navigation__modal">
+  <div class="guide__navigaiton__modal-container container">
+    <ul class="guide__navigation__modal-links row">
+        <li class="guide__navigation__modal-item">
+          <h5 class="guide__navigation__modal-label">Design Elements</h5>
+          <ul class="guide__navigation__modal-submenu">
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/elements/#colors">Colors</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/elements/#typography">Typography</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/elements/#icons">Iconography</a>
+              </li>
+          </ul>
+        </li>
+        <li class="guide__navigation__modal-item">
+          <h5 class="guide__navigation__modal-label">Design Components</h5>
+          <ul class="guide__navigation__modal-submenu">
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#alerts">Alerts</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#badges">Badges</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#buttons">Buttons</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#cards">Cards</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#chips">Chips</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#form-elements">Form Elements</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#highlights">Highlights</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#links">Links</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#loading">Loading Indicator</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#modals">Modals</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#popout">Popouts</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#tables">Tables</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#tabs">Tabs</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#toggle">Toggle</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/components/#tooltips">Tooltips</a>
+              </li>
+          </ul>
+        </li>
+        <li class="guide__navigation__modal-item">
+          <h5 class="guide__navigation__modal-label">Design Modules</h5>
+          <ul class="guide__navigation__modal-submenu">
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/modules/#topbar">Topbar</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/modules/#page-header-main">Page Header</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/modules/#page-header-tabs">Page Header Tabs</a>
+              </li>
+          </ul>
+        </li>
+        <li class="guide__navigation__modal-item">
+          <h5 class="guide__navigation__modal-label">Design Layout</h5>
+          <ul class="guide__navigation__modal-submenu">
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/layout/#grid">Grid</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/layout/#offsets">Grid Offsets</a>
+              </li>
+              <li class="guide__navigation__modal-submenu-item">
+                <a class="guide__navigation__modal-link" href="/Atomizer-Styleguide/layout/#layouts">Layouts</a>
+              </li>
+          </ul>
+        </li>
+    </ul>
+    <div class="row">
+      <h2 class="guide__navigation__modal-title">Navigation.</h2>
+    </div>
+  </div>
+</div>
+    <main role="main" class="page">
+      <header role="banner" aria-labelledby="page-header" id="top" class="guide__page-header">
+  <h1 id="page-header" class="title">Modules.</h1>
+</header>
+      <!-- Page Variables -->
+
+<!-- Page Content -->
+<article class="guide__page-article">
+
+  <!-- Page Sections -->
+  <div class="page-article__content">
+    <div class="page-article__content-section" id="topbar">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Topbar</h2>
+      <p class="text--large">You know that thing on the top of every page.</p>
+      <p class="text">The application's topbar appears at the top of each view. It serves as the user's main navigaiton between views. It should be divided into three parts. The first part is the logo. This appears in the top left and should allow users to quickly jump back their dashboards. The middle section contains a search bar. This search bar should allow users to find a scenario or business to navigate to quickly. Lastly, the more links popout - hidden in this visual view - and the user settings gives the user a visual que of who is signed in at the moment and where to go for non-business essential pages.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <header role="header" class="app-topbar">
+      <div class="app-topbar__left">
+        <a href="/">
+          <img alt="Atomizer Logo" src="../images/logos/logo.svg" />
+        </a>
+      </div>
+      <div class="app-topbar__middle">
+        <input type="search" name="siteSearch" placeholder="Quickly lookup a scenario and launch its dashboard" class="input--search input--no-border" />
+      </div>
+      <div class="app-topbar__right">
+        <ul class="right__list">
+          <!-- <li class="right__item">
+            <div class="popout__container">
+              <a href="#" class="popout__trigger">
+                <svg width="15" height="15" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 18h5v-5h-5v5zm-2 2h9v-9h-9v9zm-9-2h5v-5H2v5zm-2 2h9v-9H0v9zM13 7h5V2h-5v5zm-2 2h9V0h-9v9zM2 7h5V2H2v5zM0 9h9V0H0v9z" fill="#2791C6" fill-rule="evenodd"/></svg>
+              </a>
+              <div class="popout">
+                <ul class="popout__list">
+                  <li class="popout__item">
+                    <a href="#" class="popout__link">Popout Link</a>
+                  </li>
+                  <li class="popout__item">
+                    <a href="#" class="popout__link">Popout Link</a>
+                  </li>
+                  <li class="popout__item">
+                    <a href="#" class="popout__link">Popout Link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li> -->
+          <li class="right__item">
+            <div class="app-topbar__user">
+              <div class="user__avatar">
+                <span class="user__avatar-img user__avatar-no-img">KC</span>
+              </div>
+              <div class="user__content">
+                <span class="user__name">Kurt Cunningham</span>
+                <ul class="user__settings-list">
+                  <li class="list__item">
+                    <a href="#" class="list__item-link">Settings</a>
+                  </li>
+                  <li class="list__item">|</li>
+                  <li class="list__item">
+                    <a href="#" class="list__item-link">Sign Out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<pre class="highlight html"><code>  <span class="nt">&lt;header</span> <span class="na">role=</span><span class="s">"header"</span> <span class="na">class=</span><span class="s">"app-topbar"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"app-topbar__left"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../images/logos/logo.svg"</span> <span class="na">alt=</span><span class="s">"Atomizer Logo"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"app-topbar__middle"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"siteSearch"</span> <span class="na">placeholder=</span><span class="s">"Quickly lookup a scenario and launch its dashboard"</span> <span class="na">class=</span><span class="s">"input--search input--no-border"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"app-topbar__right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"right__list"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"right__item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"popout__container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"popout__trigger"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">"15"</span> <span class="na">height=</span><span class="s">"15"</span> <span class="na">viewBox=</span><span class="s">"0 0 20 20"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;&lt;path</span> <span class="na">d=</span><span class="s">"M13 18h5v-5h-5v5zm-2 2h9v-9h-9v9zm-9-2h5v-5H2v5zm-2 2h9v-9H0v9zM13 7h5V2h-5v5zm-2 2h9V0h-9v9zM2 7h5V2H2v5zM0 9h9V0H0v9z"</span> <span class="na">fill=</span><span class="s">"#2791C6"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span><span class="nt">/&gt;&lt;/svg&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"popout"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"popout__list"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"popout__item"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"popout__link"</span><span class="nt">&gt;</span>Popout Link<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"popout__item"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"popout__link"</span><span class="nt">&gt;</span>Popout Link<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"popout__item"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"popout__link"</span><span class="nt">&gt;</span>Popout Link<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"right__item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"app-topbar__user"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user__avatar"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"user__avatar-img user__avatar-no-img"</span><span class="nt">&gt;</span>KC<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user__content"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"user__name"</span><span class="nt">&gt;</span>Kurt Cunningham<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"user__settings-list"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list__item-link"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>|<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list__item"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list__item-link"</span><span class="nt">&gt;</span>Sign Out<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+</code></pre>
+<br/>
+  </div>
+</div>
+    <div class="page-article__content-section" id="page-header-main">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Page Header</h2>
+      <p class="text--large">You know that other thing on the top of every page.</p>
+      <p class="text">The page header module sits directly below the topbar. It's main purpose is to provide in-page navigation to users. It was designed to give users a clear sense of where important actions or information is located on a given page. It contains elements such as, the module title, save or publish actions and imporant messages about module updates.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <header role="header" class="page-header">
+      <a href="/scenario/index.html" class="page-header__back-link">
+        <svg width="20" height="20" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>arrow-left-icon</title>
+<path d="M10 20l1.435-1.393L3.828 11H20V9H3.828l7.586-7.586L10 0 0 10l10 10" fill="#FFFFFF" fill-rule="evenodd" id="app-icon"></path></svg>
+        <span>Back To Modules</span>
+      </a>
+      <h2 class="page-header__title">2. Red Switch Transfer</h2>
+      <div class="page-header__right">
+        <button class="button--disabled">Save Updates</button>
+      </div>
+    </header>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<pre class="highlight html"><code>  <span class="nt">&lt;header</span> <span class="na">role=</span><span class="s">"header"</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/scenario/index.html"</span> <span class="na">class=</span><span class="s">"page-header__back-link"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">"20"</span> <span class="na">height=</span><span class="s">"20"</span> <span class="na">viewbox=</span><span class="s">"0 0 20 20"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;&lt;title&gt;</span>arrow-left-icon<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M10 20l1.435-1.393L3.828 11H20V9H3.828l7.586-7.586L10 0 0 10l10 10"</span> <span class="na">fill=</span><span class="s">"#FFFFFF"</span> <span class="na">fill-rule=</span><span class="s">"evenodd"</span> <span class="na">id=</span><span class="s">"app-icon"</span><span class="nt">&gt;&lt;/path&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;span&gt;</span>Back To Modules<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"page-header__title"</span><span class="nt">&gt;</span>2. Red Switch Transfer<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-header__right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button--disabled"</span><span class="nt">&gt;</span>Save Updates<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+</code></pre>
+<br/>
+  </div>
+</div>
+    <div class="page-article__content-section" id="page-header-tabs">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Page Header Tabs</h2>
+      <p class="text--large">You know that other thing on the top of every page but has tabs.</p>
+      <p class="text">The page header module with tabs, similar to the page header, sits directly below the application's topbar. The only difference between it and the standard page header is the tabs. The tabs allow for large pages to be split up into sections so the user can focus on one core task versus many.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <header role="header" class="page-header page-header--tabs">
+      <h2 class="page-header__title">SSL Order Process [Production]</h2>
+      <div class="tabs tabs--dark">
+        <ul class="tab__list">
+          <li class="tab__item is-active" data-tab="tab-1">Edit Scenario</li>
+          <li class="tab__item" data-tab="tab-2">Scenario Flow</li>
+          <li class="tab__item" data-tab="tab-3">Scenario History</li>
+          <li class="tab__item" data-tab="tab-4">Settings</li>
+        </ul>
+      </div>
+      <!-- Commented out for demo -->
+      <!-- <div class="page-header__right">
+        <ul class="page-header__stats">
+          <li class="page-header__stat">
+            <span class="number">100</span>
+            <span class="text">Total Modules</span>
+          </li>
+          <li class="page-header__stat">
+            <span class="number">50</span>
+            <span class="text">Total Rules</span>
+          </li>
+          <li class="page-header__stat">
+            <span class="number">1.5</span>
+            <span class="text">Load Time in sec.</span>
+          </li>
+        </ul>
+        <div class="button--add-on__container toggle-parent">
+          <button id="alert-show-trigger" class="button--alpha button--add-on">Save Scenario</button>
+          <span class="button--add-on--alpha toggle-element">
+            <img src="../../images/icons/arrow-select-icon.svg" class="button--add-on__icon">
+          </span>
+          <ul class="button--alpha button--add-on__dropdown">
+            <li class="button--add-on__dropdown-item">
+              <a href="#" class="button--add-on__dropdown-link">Preview Scenario</a>
+            </li>
+            <li class="button--add-on__dropdown-item">
+              <a href="#" class="button--add-on__dropdown-link">Publish Scenario</a>
+            </li>
+            <li class="button--add-on__dropdown-item">
+              <a href="#" class="button--add-on__dropdown-link">Archive Scenario</a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+    </header>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<pre class="highlight html"><code>  <span class="nt">&lt;header</span> <span class="na">role=</span><span class="s">"header"</span> <span class="na">class=</span><span class="s">"page-header page-header--tabs"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"page-header__title"</span><span class="nt">&gt;</span>SSL Order Process [Production]<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs tabs--dark"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"tab__list"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tab__item is-active"</span> <span class="na">data-tab=</span><span class="s">"tab-1"</span><span class="nt">&gt;</span>Edit Scenario<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tab__item"</span> <span class="na">data-tab=</span><span class="s">"tab-2"</span><span class="nt">&gt;</span>Scenario Flow<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tab__item"</span> <span class="na">data-tab=</span><span class="s">"tab-3"</span><span class="nt">&gt;</span>Scenario History<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"tab__item"</span> <span class="na">data-tab=</span><span class="s">"tab-4"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-header__right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"page-header__stats"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-header__stat"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>100<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Total Modules<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-header__stat"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Total Rules<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-header__stat"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>1.5<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Load Time in sec.<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"button--add-on__container toggle-parent"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"alert-show-trigger"</span> <span class="na">class=</span><span class="s">"button--alpha button--add-on"</span><span class="nt">&gt;</span>Save Scenario<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button--add-on--alpha toggle-element"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../images/icons/arrow-select-icon.svg"</span> <span class="na">class=</span><span class="s">"button--add-on__icon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"button--alpha button--add-on__dropdown"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"button--add-on__dropdown-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"button--add-on__dropdown-link"</span><span class="nt">&gt;</span>Preview Scenario<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"button--add-on__dropdown-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"button--add-on__dropdown-link"</span><span class="nt">&gt;</span>Publish Scenario<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"button--add-on__dropdown-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"button--add-on__dropdown-link"</span><span class="nt">&gt;</span>Archive Scenario<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+</code></pre>
+<br/>
+  </div>
+</div>
+  </div>
+
+  <!-- Page Sidebar -->
+  <aside role="sidebar" class="page-article__aside">
+  <nav role="navigation" class="page-article__nav">
+    <h5 class="label text--bold">Navigation</h5>
+    <ul class="list">
+        <li class="item">
+          <a class="link" href="#topbar">Topbar</a>
+          <a class="link" href="#page-header-main">Page Header</a>
+          <a class="link" href="#page-header-tabs">Page Header Tabs</a>
+        </li>
+      <li class="item margin-top--alpha">
+        <a class="link--bravo" href="#top">Back To Top</a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+</article>
+    </main>
+    <footer role="footer" class="guide__footer">
+  <label>Atomzier | A Red Ventures Product</label>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../javascript/application.js" type="text/javascript"></script>
+    <script>
+      $(".page-article__aside").stick_in_parent({
+        sticky_class: 'is-fixed'
+      });
+    </script>
+  </body>
+</html>
